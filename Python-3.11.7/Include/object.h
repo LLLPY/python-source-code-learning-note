@@ -99,7 +99,7 @@ whose size is determined when the object is allocated.
  */
 struct _object {
     _PyObject_HEAD_EXTRA
-    Py_ssize_t ob_refcnt; // 引用计数
+    Py_ssize_t ob_refcnt;
     PyTypeObject *ob_type;
 };
 
