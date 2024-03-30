@@ -1990,7 +1990,7 @@ builtin_print_impl(PyObject *module, PyObject *args, PyObject *sep,
 /*[clinic end generated code: output=3cfc0940f5bc237b input=c143c575d24fe665]*/
 {
     int i, err;
-
+    printf("白日梦想猿专属打印函数---start\n");
     if (file == Py_None) {
         PyThreadState *tstate = _PyThreadState_GET();
         file = _PySys_GetAttr(tstate, &_Py_ID(stdout));
@@ -2059,8 +2059,10 @@ builtin_print_impl(PyObject *module, PyObject *args, PyObject *sep,
         }
         Py_DECREF(tmp);
     }
-
+    
+    printf("白日梦想猿专属打印函数---end\n");
     Py_RETURN_NONE;
+
 }
 
 
@@ -2318,7 +2320,7 @@ For many object types, including most builtins, eval(repr(obj)) == obj.
 static PyObject *
 builtin_repr(PyObject *module, PyObject *obj)
 /*[clinic end generated code: output=7ed3778c44fd0194 input=1c9e6d66d3e3be04]*/
-{
+{   
     return PyObject_Repr(obj);
 }
 

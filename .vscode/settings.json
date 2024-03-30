@@ -1,3 +1,10 @@
 {
-    "esbonio.sphinx.confDir": ""
+    "esbonio.sphinx.confDir": "",
+    "files.associations": {
+        "longobject.h": "c",
+        "longintrepr.h": "c",
+        "bytearrayobject.h": "c",
+        "floatobject.c.h": "c",
+        "floatobject.h": "c"
+    }
 }

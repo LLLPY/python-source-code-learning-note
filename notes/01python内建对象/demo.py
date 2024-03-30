@@ -1,9 +1,1 @@
-def fun():
-    print('hello world')
-
-def happy():
-    a = 10
-    b = 'hello'
-    fun()
-
-fun()
+print(1+1)
