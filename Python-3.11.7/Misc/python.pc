@@ -1,5 +1,5 @@
 # See: man pkg-config
-prefix=/Users/lvliangliang/Desktop/python/7.project/python-source-code-learning/tools/../dist
+prefix=/Users/lvliangliang/Desktop/python/7.project/python-source-code-learning/dist
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

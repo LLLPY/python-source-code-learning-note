@@ -30,7 +30,7 @@ prefix_real=$(installed_prefix "$0")
 # locations. Keep prefix & exec_prefix using their original values in case
 # they are referenced in other configure variables, to prevent double
 # substitution, issue #22140.
-prefix="/Users/lvliangliang/Desktop/python/7.project/python-source-code-learning/tools/../dist"
+prefix="/Users/lvliangliang/Desktop/python/7.project/python-source-code-learning/dist"
 exec_prefix="${prefix}"
 exec_prefix_real=${prefix_real}
 includedir=$(echo "${prefix}/include" | sed "s#$prefix#$prefix_real#")

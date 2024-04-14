@@ -134,7 +134,7 @@ MULTIARCH=	darwin
 MULTIARCH_CPPFLAGS = -DMULTIARCH=\"darwin\"
 
 # Install prefix for architecture-independent files
-prefix=		/Users/lvliangliang/Desktop/python/7.project/python-source-code-learning/tools/../dist
+prefix=		/Users/lvliangliang/Desktop/python/7.project/python-source-code-learning/dist
 
 # Install prefix for architecture-dependent files
 exec_prefix=	${prefix}
@@ -349,7 +349,7 @@ EXEMODE=	755
 FILEMODE=	644
 
 # configure script arguments
-CONFIG_ARGS=	 '--prefix=/Users/lvliangliang/Desktop/python/7.project/python-source-code-learning/tools/../dist'
+CONFIG_ARGS=	 '--prefix=/Users/lvliangliang/Desktop/python/7.project/python-source-code-learning/dist'
 
 
 # Subdirectories with code
