@@ -290,14 +290,14 @@ PyLong_FromLong(long ival)
     PyLongObject *v;
     unsigned long abs_ival, t;
     int ndigits;
-    printf("===================开始=======================\n变量ival的值：%d\n", ival);
+    // printf("===================开始=======================\n变量ival的值：%d\n", ival);
     /* Handle small and medium cases. */
     if (IS_SMALL_INT(ival)) {
-        printf("它是一个small_int.\n");
+        // printf("它是一个small_int.\n");
         return get_small_int((sdigit)ival);
     }
     if (-(long)PyLong_MASK <= ival && ival <= (long)PyLong_MASK) {
-        printf("它是一个medium_int.\n");
+        // printf("它是一个medium_int.\n");
         return _PyLong_FromMedium((sdigit)ival);
     }
 
@@ -312,7 +312,7 @@ PyLong_FromLong(long ival)
     }
 
     /* Construct output value. */
-    printf("ndigits的值:%d\n", ndigits);
+    // printf("ndigits的值:%d\n", ndigits);
     v = _PyLong_New(ndigits);
     
     if (v != NULL) {
@@ -322,10 +322,10 @@ PyLong_FromLong(long ival)
         while (t) {
             *p++ = (digit)(t & PyLong_MASK);
             t >>= PyLong_SHIFT;
-            printf("p的值：%d\n", p);
+            // printf("p的值：%d\n", p);
         }
     }
-    printf("===================结束=========================\n");
+    // printf("===================结束=========================\n");
     return (PyObject *)v;
 }
 
@@ -1924,6 +1924,10 @@ long_to_decimal_string(PyObject *aa)
     PyObject *v;
     if (long_to_decimal_string_internal(aa, &v, NULL, NULL, NULL) == -1)
         return NULL;
+    
+    // 打印int对象完整的属性
+    PyLongObject *a;
+    a = (PyLongObject *)aa;
     return v;
 }
 
