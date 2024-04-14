@@ -5,6 +5,14 @@
         "longintrepr.h": "c",
         "bytearrayobject.h": "c",
         "floatobject.c.h": "c",
-        "floatobject.h": "c"
+        "floatobject.h": "c",
+        "__hash_table": "c",
+        "array": "c",
+        "charconv": "c",
+        "type_traits": "c",
+        "limits": "c",
+        "ratio": "c",
+        "tuple": "c",
+        "variant": "c"
     }
 }

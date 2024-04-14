@@ -15,11 +15,23 @@ struct _object {
 #  非定长对象 PyVarObject
 
 
+# print(int.__base__)
 
 
-print(int.__base__)
 
-A = type('A',(int,),{'a':100})
-a = A()
-print(a.a)
+# num = int(f'1{"0"*4299}')
+a = 6666
+print(a)
+# b = 10**100
+# print(b)
+# c = 10**1000
+# print(c)
+# import sys
+# sys.set_int_max_str_digits(100000)
+# d = 10**10000
+# print(d)
 
+a = 1
+print(a,bin(a))
+b = a<< 15
+print(b,bin(b))

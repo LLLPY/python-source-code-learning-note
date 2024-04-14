@@ -1,4 +1,4 @@
-#!/Users/lvliangliang/Desktop/python-source-code-learning/dist/bin/python3.11
+#!/Users/lvliangliang/Desktop/python/7.project/python-source-code-learning/tools/../dist/bin/python3.11
 # -*- python -*-
 
 # Keep this script in sync with python-config.sh.in

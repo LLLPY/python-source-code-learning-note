@@ -290,12 +290,14 @@ PyLong_FromLong(long ival)
     PyLongObject *v;
     unsigned long abs_ival, t;
     int ndigits;
-
+    printf("===================开始=======================\n变量ival的值：%d\n", ival);
     /* Handle small and medium cases. */
     if (IS_SMALL_INT(ival)) {
+        printf("它是一个small_int.\n");
         return get_small_int((sdigit)ival);
     }
     if (-(long)PyLong_MASK <= ival && ival <= (long)PyLong_MASK) {
+        printf("它是一个medium_int.\n");
         return _PyLong_FromMedium((sdigit)ival);
     }
 
@@ -310,7 +312,9 @@ PyLong_FromLong(long ival)
     }
 
     /* Construct output value. */
+    printf("ndigits的值:%d\n", ndigits);
     v = _PyLong_New(ndigits);
+    
     if (v != NULL) {
         digit *p = v->ob_digit;
         Py_SET_SIZE(v, ival < 0 ? -ndigits : ndigits);
@@ -318,8 +322,10 @@ PyLong_FromLong(long ival)
         while (t) {
             *p++ = (digit)(t & PyLong_MASK);
             t >>= PyLong_SHIFT;
+            printf("p的值：%d\n", p);
         }
     }
+    printf("===================结束=========================\n");
     return (PyObject *)v;
 }
 

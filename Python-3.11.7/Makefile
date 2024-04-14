@@ -31,8 +31,8 @@ MODLIBS=           $(LOCALMODLIBS) $(BASEMODLIBS)
 VERSION=	3.11
 srcdir=		.
 
-abs_srcdir=	/Users/lvliangliang/Desktop/python-source-code-learning/Python-3.11.7
-abs_builddir=	/Users/lvliangliang/Desktop/python-source-code-learning/Python-3.11.7
+abs_srcdir=	/Users/lvliangliang/Desktop/python/7.project/python-source-code-learning/Python-3.11.7
+abs_builddir=	/Users/lvliangliang/Desktop/python/7.project/python-source-code-learning/Python-3.11.7
 
 
 CC=		gcc
@@ -134,7 +134,7 @@ MULTIARCH=	darwin
 MULTIARCH_CPPFLAGS = -DMULTIARCH=\"darwin\"
 
 # Install prefix for architecture-independent files
-prefix=		/Users/lvliangliang/Desktop/python-source-code-learning/dist
+prefix=		/Users/lvliangliang/Desktop/python/7.project/python-source-code-learning/tools/../dist
 
 # Install prefix for architecture-dependent files
 exec_prefix=	${prefix}
@@ -349,7 +349,7 @@ EXEMODE=	755
 FILEMODE=	644
 
 # configure script arguments
-CONFIG_ARGS=	 '--prefix=/Users/lvliangliang/Desktop/python-source-code-learning/dist'
+CONFIG_ARGS=	 '--prefix=/Users/lvliangliang/Desktop/python/7.project/python-source-code-learning/tools/../dist'
 
 
 # Subdirectories with code
